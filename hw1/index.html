@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Tia Jain</title>
+  <!-- END PART 1 -->
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <!-- BEGIN PART 2 -->
+    <h3>
+      <a class="link" href="index.html">TJ</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#experience">Experience</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- BEGIN PART 5 -->
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!-- 
+        5.1: What does this button tag correspond to on the site? 
+        This button tag corresponds to the button that changes the website between light and dark mode.
+      
+      -->
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- 
+        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
+        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
+        make it so that this button appears on screen? 
+        Hint: remember what @media (max-width: 600px) means.
+
+        One of the rules 'display: none' on one instance because we want to hide the 3 lines which symbolize a dropdown menu. 
+        We already have our options in our header and so there is no need to display an additional menu.
+        To make the button appear on the screen, comment out the line that says display: none
+       -->
+
+      <!-- END PART 5 -->
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-and-about">
+      <div class="profile-image">
+        <img src="me.jpg" width="400px" height="400px" style="border-radius: 50%;">
+      </div>
+      <div class="about center">
+        <!-- BEGIN PART 6 -->
+        <h1>Hi, I'm <span class="about__name">Tia</span></h1>
+        <h2 class="about__role">Computer Science at UC Berkeley</h2>
+        <p class="about__desc">I'm interested in using technology for social good, especially in the healthcare space. I'm also interested in the intersection of business, design, and CS which I hope to explore more.</p>
+        <!-- END PART 6 -->
+        <div class="about__contact center">
+          <a href="https://docs.google.com/document/d/16p9FV20mlP-CgXRD2hTKw-rjlg5hyt6E1mUQMIZ0ORg/edit?usp=sharing">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+  
+          <a href="https://github.com/TiaJain" aria-label="github" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+  
+          <a href="https://linkedin.com/in/tiajain" aria-label="linkedin" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>AI4Sight</h3>
+          <p class="project__description">
+            iOS app that leverages the power of machine learning to help the blind recognize their surroundings.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Swift</li>
+            <li class="project__stack-item">ML</li>
+          </ul>
+
+          <a href="https://github.com/TiaJain/AI4Sight" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://ai4sight.org" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Gitlet</h3>
+          <p class="project__description">
+            Built the key components of the version control system git—including adding, committing, and merging.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Scheme Interpreter</h3>
+          <p class="project__description">
+            Developed an interpreter for a subset of the Scheme language. Utilized lexical & syntactic analysis as well as input parsing.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Scheme</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+    <section id="experiences" class="section experience">
+      <h2 class="section__title">Experience</h2>
+      <div class="experience__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="experience">
+          <h3>Bioinformatics Intern</h3>
+          <p class="exp__description">
+            Used machine learning to predict the genomic factors that influence the progression and varying severity of the autoimmune disease lupus.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">R</li>
+            <li class="exp__stack-item">ML</li>
+            <li class="exp__stack-item">AWS</li>
+          </ul>
+
+          <a href="https://www.nature.com/articles/s42003-021-02000-9" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://www.biorxiv.org/content/10.1101/2020.10.30.362715v1" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <h3>Academic Intern for CS61B (Data Structures)</h3>
+          <p class="exp__description">
+            Answered conceptual questions and helped students complete weekly labs for UC Berkeley's Data Structures course.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">Java</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3>AI4ALL</h3>
+          <p class="exp__description">
+            Learned about the fundamentals of Artificial Intelligence with a policy and social justice-centered focus. Collaborated to train a machine learning model to distinguish Melanoma from 7 other skin diseases (>80% accuracy)
+
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">Python</li>
+            <li class="exp__stack-item">AI</li>
+          </ul>
+        </div>
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+
+
+
+    <section class="section skills" id="skills">
+      <!-- BEGIN PART 10 -->
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Python</li>
+        <li class="skills__list-item btn btn--plain">Java</li>
+        <li class="skills__list-item btn btn--plain">Software Engineering</li>
+        <li class="skills__list-item btn btn--plain">Data Structures</li>
+        <li class="skills__list-item btn btn--plain">Algorithms</li>
+        <li class="skills__list-item btn btn--plain">Web Design</li>
+      </ul>
+      <!-- END PART 10 -->
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:tiasjain@gmail.com">
+        <span class="btn btn--outline">Email me</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- BEGIN PART 12 -->
+    <a href="/" class="link footer__link">
+      Created with ❤️ By Tia Jain
+    </a>
+    <!-- END PART 12 -->
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

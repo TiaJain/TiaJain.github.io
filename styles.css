@@ -27,7 +27,8 @@ body {
 }
 
 .light {
-  --clr-bg: #fcfcfc;
+  /* --clr-bg: #fcfcfc; */
+  --clr-bg: #c4e2fa;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
@@ -112,8 +113,6 @@ button {
   color: var(--clr-primary);
 }
 
-/* BEGIN PART 4 */
-
 .link::before {
   content: "";
   display: inline;
@@ -129,8 +128,6 @@ button {
 .link:focus::before {
   width: 100%;
 }
-
-/* END PART 4 */
 
 .link--nav {
   color: var(--clr-fg);
@@ -158,6 +155,7 @@ button {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 20px;
 }
 
 .btn--outline:focus,
@@ -211,8 +209,6 @@ button {
   layout
 ========*/
 
-/* BEGIN PART 3 */
-
 .center {
   display: flex;
   align-items: center;
@@ -228,8 +224,6 @@ button {
   justify-content: right;
 }
 
-/* END PART 3 */
-
 main {
   max-width: 1100px;
   width: 95%;
@@ -244,6 +238,10 @@ main {
   text-align: center;
   margin-bottom: 1em;
   text-transform: uppercase;
+}
+
+.card__title {
+  color: var(--clr-primary);
 }
 
 .nav__list {
@@ -267,13 +265,12 @@ main {
 }
 
 .profile-image {
+  margin-top: 50px;
   margin-left: 75px;
   border-radius: 50%;
   border-collapse: separate;
   /* overflow: hidden; */
 }
-
-/* BEGIN PART 7 */
 
 .about {
   display: flex;
@@ -281,16 +278,14 @@ main {
   margin-top: 20px;
 }
 
-/* END PART 7 */
-
 .about__name {
   color: var(--clr-primary);
-  /* text-align: right; */
+  text-align: center;
 }
 
 .about__role {
   margin-top: 1.2em;
-  /* text-align: right; */
+  text-align: center;
 }
 
 .about__desc {
@@ -312,17 +307,13 @@ main {
   margin-right: 1em;
 }
 
-/* BEGIN PART 9 */
-
 .projects__grid, .experience__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, calc(100% / 3 - 20px * 2 / 3));
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
-
-/* END PART 9 */
 
 .project, .experience {
   padding: 2em;
@@ -330,6 +321,9 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  background-color: white;
+  border-radius: 20px;
+  /* background-color: var(--clr-bg); */
 }
 
 #experiences {
@@ -364,8 +358,6 @@ main {
   margin-left: 0.5em;
 }
 
-/* BEGIN PART 11 */
-
 .skills__list {
   max-width: 450px;
   width: 95%;
@@ -378,9 +370,9 @@ main {
 .skills__list-item {
   margin-left: 10px;
   margin-right: 10px;
+  background-color: white;
+  border-radius: 20px;
 }
-
-/* END PART 11 */
 
 .contact {
   flex-direction: column;

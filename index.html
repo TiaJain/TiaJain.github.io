@@ -9,19 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  <!-- BEGIN PART 1 -->
   <link rel="stylesheet" href="styles.css">
   <title>Tia Jain</title>
-  <!-- END PART 1 -->
 </head>
 
 <body class="light" id="top">
   <header class="header center">
-    <!-- BEGIN PART 2 -->
+ 
     <h3>
       <a class="link" href="index.html">TJ</a>
     </h3>
-    <!-- END PART 2 -->
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
@@ -33,75 +30,199 @@
         <li class="nav__list-item">
           <a class="link link--nav" href="#skills">Skills</a>
         </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#contact">Contact</a>
-        </li>
       </ul>
-
-      <!-- BEGIN PART 5 -->
 
       <button type="button" aria-label="toggle theme" class="btn btn--icon">
         <i id="btn-theme" class="fas fa-moon"></i>
       </button>
 
-      <!-- 
-        5.1: What does this button tag correspond to on the site? 
-        This button tag corresponds to the button that changes the website between light and dark mode.
-      
-      -->
-
       <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
         <i class="fas fa-bars"></i>
       </button>
 
-      <!-- 
-        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
-        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
-        make it so that this button appears on screen? 
-        Hint: remember what @media (max-width: 600px) means.
-
-        One of the rules 'display: none' on one instance because we want to hide the 3 lines which symbolize a dropdown menu. 
-        We already have our options in our header and so there is no need to display an additional menu.
-        To make the button appear on the screen, comment out the line that says display: none
-       -->
-
-      <!-- END PART 5 -->
     </nav>
   </header>
 
   <main>
     <div class="image-and-about">
       <div class="profile-image">
-        <img src="me.jpg" width="400px" height="400px" style="border-radius: 50%;">
+        <img src="me.jpg" width="350px" height="350px" style="border-radius: 50%;">
       </div>
       <div class="about center">
-        <!-- BEGIN PART 6 -->
-        <h1>Hi, I'm <span class="about__name">Tia</span></h1>
-        <h2 class="about__role">Computer Science at UC Berkeley</h2>
-        <p class="about__desc">I'm interested in using technology for social good, especially in the healthcare space. I'm also interested in the intersection of business, design, and CS which I hope to explore more.</p>
-        <!-- END PART 6 -->
+        <h1>👋 Hi, I'm <span class="about__name">Tia</span></h1>
+        <h2 class="about__role">Junior studying Computer Science at UC Berkeley</h2>
+        <p class="about__desc">My interests lie at the intersection of technology and various other fields, including healthcare and finance. But more broadly, I'm interested in building socially impactful technology. 
+          <br><br> This summer, I will be a Software Engineering Intern at Susquehanna International Group, LLP (SIG), where I hope to further explore fintech and trading.</p>
         <div class="about__contact center">
-          <a href="https://docs.google.com/document/d/16p9FV20mlP-CgXRD2hTKw-rjlg5hyt6E1mUQMIZ0ORg/edit?usp=sharing">
+          <a href="https://docs.google.com/document/d/16p9FV20mlP-CgXRD2hTKw-rjlg5hyt6E1mUQMIZ0ORg/edit?usp=sharing" target="_blank">
             <span class="btn btn--outline">Resume</span>
           </a>
   
-          <a href="https://github.com/TiaJain" aria-label="github" class="link link--icon">
+          <a href="https://github.com/TiaJain" aria-label="github" class="link link--icon" target="_blank">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
   
-          <a href="https://linkedin.com/in/tiajain" aria-label="linkedin" class="link link--icon">
+          <a href="https://linkedin.com/in/tiajain" aria-label="linkedin" class="link link--icon" target="_blank">
             <i aria-hidden="true" class="fab fa-linkedin"></i>
           </a>
+
+          <a href="mailto:tiasjain@gmail.com" aria-label="email" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-envelope"></i>
+          </a>
+          
         </div>
       </div>
     </div>
     
+    <section id="experiences" class="section">
+      <h2 class="section__title">Experience</h2>
+      <div class="experience__grid">
+
+        <div class="experience">
+          <img src="SIG-Logo.png" width="65px" height="70px" style="border-radius: 50%;">
+          <h3 class="card__title">Incoming Summer 2023 Software Engineering Intern @ Susquehanna International Group, LLP (SIG)</h3>
+          <p class="exp__description">
+            On the Stream Processing and Research Computing team within Quantitative Engineering and Development (QED).
+          </p>
+
+          <a href="https://www.sig.com/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <img src="Zendesk-Logo.png" width="65px" height="70px" style="border-radius: 50%;">
+          <h3 class="card__title">Associate Software Developer @ Zendesk</h3>
+          <p class="exp__description">
+            Renovated the frontend for SLA ticketing notification system that has over 1 million daily user traffic. Discussed design principles with Zendesk's UI/UX team
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">React</li>
+          </ul>
+
+          <a href="https://www.zendesk.com/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <img src="CSM-logo.png" width="75px" height="75px" style="border-radius: 50%;">
+          <h3 class="card__title">Frontend Developer @ Computer Science Mentors (CSM)</h3>
+          <p class="exp__description">
+            Implemented section-swapping functionality for students enrolled in a CSM section. Will be deployed on the public-facing CSM website, used by 1500 UC Berkeley CS students to sign up for tutoring.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">React</li>
+          </ul>
+
+          <a href="https://csmentors.berkeley.edu/#/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <img src="UHC-logo.png" width="90px" height="60px" style="border-radius: 50%;">
+          <h3 class="card__title">Software Engineering Intern @ UnitedHealth Group</h3>
+          <p class="exp__description">
+            Designed a centralized model registry to log data for all deployed AI/ML models, enabling better searchability for new models and promoting collaboration amongst developers.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">Java</li>
+            <li class="exp__stack-item">Postman</li>
+            <li class="exp__stack-item">Hasura</li>
+            <li class="exp__stack-item">SpringBoot</li>
+            <li class="exp__stack-item">GraphQL</li>
+            <li class="exp__stack-item">Storybook</li>
+            <li class="exp__stack-item">Angular</li>
+          </ul>
+
+          <a href="https://www.uhc.com/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+
+        </div>
+
+        <div class="experience">
+          <img src="PlexTech-Logo.jpg" width="75px" height="75px" style="border-radius: 50%;">
+          <h3 class="card__title">Software Developer @ PlexTech</h3>
+          <p class="exp__description">
+            Developed an internal tool (Grader interface and application form), helping assess future applicants to the club and aid with deliberations
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">React</li>
+            <li class="exp__stack-item">Flask</li>
+            <li class="exp__stack-item">MongoDB</li>
+            <li class="exp__stack-item">Formik</li>
+          </ul>
+
+          <a href="https://plextech.berkeley.edu/" aria-label="source code" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <img src="EHD-logo.png" width="75px" height="75px" style="border-radius: 50%;">
+          <h3 class="card__title">Software Engineering Intern @ End Hunger Durham (EHD)</h3>
+          <p class="exp__description">
+            Redesigned EHD's website, automating the process of updating/uploading documents as well as translations.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">JavaScript</li>
+            <li class="exp__stack-item">AppScript</li>
+            <li class="exp__stack-item">Google Sheets</li>
+          </ul>
+
+          <a href="https://www.endhungerdurham.org/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <img src="UCSF-Logo.jpg" width="75px" height="75px" style="border-radius: 50%;">
+          <h3 class="card__title">Bioinformatics Intern @ Sirota Lab (UCSF)</h3>
+          <p class="exp__description">
+            Used machine learning to predict the genomic factors that influence the progression and varying severity of the autoimmune disease Lupus.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">R</li>
+            <li class="exp__stack-item">ML</li>
+            <li class="exp__stack-item">AWS</li>
+          </ul>
+
+          <a href="https://sirotalab.ucsf.edu/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://www.nature.com/articles/s42003-021-02000-9" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://www.biorxiv.org/content/10.1101/2020.10.30.362715v1" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="experience">
+          <img src="EECS-Logo.jpg" width="75px" height="75px" style="border-radius: 50%;">
+          <h3 class="card__title">Academic Intern for CS61B (Data Structures)</h3>
+          <p class="exp__description">
+            Answered conceptual questions and helped students complete weekly labs for UC Berkeley's Data Structures course.
+          </p>
+          <ul class="exp__stack">
+            <li class="exp__stack-item">Java</li>
+          </ul>
+
+          <a href="https://sp23.datastructur.es/" aria-label="live preview" class="link link--icon" target="_blank">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
     <section id="projects" class="section projects">
       <h2 class="section__title">Projects</h2>
       <div class="projects__grid">
-        <!-- BEGIN PART 8 -->
         <div class="project">
-          <h3>AI4Sight</h3>
+          <h3 class="card__title">AI4Sight</h3>
           <p class="project__description">
             iOS app that leverages the power of machine learning to help the blind recognize their surroundings.
           </p>
@@ -110,16 +231,16 @@
             <li class="project__stack-item">ML</li>
           </ul>
 
-          <a href="https://github.com/TiaJain/AI4Sight" aria-label="source code" class="link link--icon">
+          <a href="https://github.com/TiaJain/AI4Sight" aria-label="source code" class="link link--icon" target="_blank">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
-          <a href="https://ai4sight.org" aria-label="live preview" class="link link--icon">
+          <a href="https://ai4sight.org" aria-label="live preview" class="link link--icon" target="_blank">
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
         </div>
 
         <div class="project">
-          <h3>Gitlet</h3>
+          <h3 class="card__title">Gitlet</h3>
           <p class="project__description">
             Built the key components of the version control system git—including adding, committing, and merging.
           </p>
@@ -127,13 +248,13 @@
             <li class="project__stack-item">Java</li>
           </ul>
 
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
+          <a href="https://github.com" aria-label="source code" class="link link--icon" target="_blank">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
         </div>
 
         <div class="project">
-          <h3>Scheme Interpreter</h3>
+          <h3 class="card__title">Scheme Interpreter</h3>
           <p class="project__description">
             Developed an interpreter for a subset of the Scheme language. Utilized lexical & syntactic analysis as well as input parsing.
           </p>
@@ -142,67 +263,15 @@
             <li class="project__stack-item">Scheme</li>
           </ul>
 
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
+          <a href="https://github.com" aria-label="source code" class="link link--icon" target="_blank">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
         </div>
-        <!-- END PART 8 -->
       </div>
     </section>
-
-    <section id="experiences" class="section experience">
-      <h2 class="section__title">Experience</h2>
-      <div class="experience__grid">
-        <!-- BEGIN PART 8 -->
-        <div class="experience">
-          <h3>Bioinformatics Intern</h3>
-          <p class="exp__description">
-            Used machine learning to predict the genomic factors that influence the progression and varying severity of the autoimmune disease lupus.
-          </p>
-          <ul class="exp__stack">
-            <li class="exp__stack-item">R</li>
-            <li class="exp__stack-item">ML</li>
-            <li class="exp__stack-item">AWS</li>
-          </ul>
-
-          <a href="https://www.nature.com/articles/s42003-021-02000-9" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          <a href="https://www.biorxiv.org/content/10.1101/2020.10.30.362715v1" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="experience">
-          <h3>Academic Intern for CS61B (Data Structures)</h3>
-          <p class="exp__description">
-            Answered conceptual questions and helped students complete weekly labs for UC Berkeley's Data Structures course.
-          </p>
-          <ul class="exp__stack">
-            <li class="exp__stack-item">Java</li>
-          </ul>
-        </div>
-
-        <div class="experience">
-          <h3>AI4ALL</h3>
-          <p class="exp__description">
-            Learned about the fundamentals of Artificial Intelligence with a policy and social justice-centered focus. Collaborated to train a machine learning model to distinguish Melanoma from 7 other skin diseases (>80% accuracy)
-
-          </p>
-          <ul class="exp__stack">
-            <li class="exp__stack-item">Python</li>
-            <li class="exp__stack-item">AI</li>
-          </ul>
-        </div>
-        <!-- END PART 8 -->
-      </div>
-    </section>
-
-
 
 
     <section class="section skills" id="skills">
-      <!-- BEGIN PART 10 -->
       <h2 class="section__title">Skills</h2>
       <ul class="skills__list">
         <li class="skills__list-item btn btn--plain">Python</li>
@@ -210,24 +279,17 @@
         <li class="skills__list-item btn btn--plain">Software Engineering</li>
         <li class="skills__list-item btn btn--plain">Data Structures</li>
         <li class="skills__list-item btn btn--plain">Algorithms</li>
-        <li class="skills__list-item btn btn--plain">Web Design</li>
+        <li class="skills__list-item btn btn--plain">Computer Architechture</li>
+        <li class="skills__list-item btn btn--plain">Artificial Intelligence</li>
+        <li class="skills__list-item btn btn--plain">Databases</li>
       </ul>
-      <!-- END PART 10 -->
-    </section>
-    <section class="section contact center" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <a href="mailto:tiasjain@gmail.com">
-        <span class="btn btn--outline">Email me</span>
-      </a>
     </section>
   </main>
 
   <footer class="footer">
-    <!-- BEGIN PART 12 -->
     <a href="/" class="link footer__link">
-      Created with ❤️ By Tia Jain
+      Created by Tia Jain
     </a>
-    <!-- END PART 12 -->
   </footer>
 
 

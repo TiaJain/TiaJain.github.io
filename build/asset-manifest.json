@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a1524c0.css",
+    "main.js": "/static/js/main.f60f5746.js",
+    "static/media/grad_picture_old.jpg": "/static/media/grad_picture_old.019ce1e61dccdce67c88.jpg",
+    "static/media/grad_picture.jpg": "/static/media/grad_picture.aa8dd46c0090443ce450.jpg",
+    "static/media/IMG_8411.JPG": "/static/media/IMG_8411.343f1794581e15386df3.JPG",
+    "static/media/faceless_portrait.png": "/static/media/faceless_portrait.14dfad37009225e13610.png",
+    "static/media/instagram.png": "/static/media/instagram.97e23dfbf4a0dad56a2d.png",
+    "static/media/email.png": "/static/media/email.4aa0ea3cc51d21815fa6.png",
+    "static/media/Salesforce-logo.jpg": "/static/media/Salesforce-logo.dae420dc7d0d069eabf7.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.fca54110901eede05699.png",
+    "static/media/Zendesk-Logo-old.png": "/static/media/Zendesk-Logo-old.ef59424da9f4d78b795a.png",
+    "static/media/EECS-Logo.jpg": "/static/media/EECS-Logo.0e9e4ca886188e7f8460.jpg",
+    "static/media/PlexTech-Logo.jpg": "/static/media/PlexTech-Logo.3c98eab4809982401789.jpg",
+    "static/media/EHD-Logo.png": "/static/media/EHD-Logo.8d8e97f30f81d182c3f0.png",
+    "static/media/meta_logo.png": "/static/media/meta_logo.7bd3864a3297a16e65c4.png",
+    "static/media/nvidia_logo.jpg": "/static/media/nvidia_logo.b269033eda68d24c0945.jpg",
+    "static/media/instawork_logo.png": "/static/media/instawork_logo.07a15fe433f4ea5ee772.png",
+    "static/media/UCSF-Logo.jpg": "/static/media/UCSF-Logo.a26cb4e9cc81e8450dda.jpg",
+    "static/media/UHC-Logo.png": "/static/media/UHC-Logo.1c7cbb22473a0885a704.png",
+    "index.html": "/index.html",
+    "main.1a1524c0.css.map": "/static/css/main.1a1524c0.css.map",
+    "main.f60f5746.js.map": "/static/js/main.f60f5746.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a1524c0.css",
+    "static/js/main.f60f5746.js"
+  ]
+}
